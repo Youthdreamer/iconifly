@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- 背景圆 -->
+  <circle cx="100" cy="100" r="80" fill="#f5f5f5"/>
+  
+  <!-- 中心孔 -->
+  <circle cx="100" cy="100" r="40" fill="#ffffff"/>
+  
+  <!-- 环形图扇区 -->
+  <path d="M100 20A80 80 0 0 1 178 100H138A40 40 0 0 0 100 60V20Z" fill="#3498db"/>
+  <path d="M178 100A80 80 0 0 1 100 180V140A40 40 0 0 0 138 100H178Z" fill="#e74c3c"/>
+  <path d="M100 180A80 80 0 0 1 22 100H62A40 40 0 0 0 100 140V180Z" fill="#2ecc71"/>
+  <path d="M22 100A80 80 0 0 1 100 20V60A40 40 0 0 0 62 100H22Z" fill="#f39c12"/>
+  
+  <!-- 描边 -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#dddddd" stroke-width="1"/>
+  <circle cx="100" cy="100" r="40" fill="none" stroke="#dddddd" stroke-width="1"/>
+</svg> 

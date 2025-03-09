@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100"><path fill="var(--fill, #3498db)" d="M10 10h30v80H10zM50 30h30v60H50zM90 20h30v70H90zM130 40h30v50h-30z"/><path stroke="var(--stroke, #e74c3c)" stroke-dasharray="5,5" stroke-width="2" d="M10 50h170"/></svg>

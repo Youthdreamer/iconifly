@@ -1,0 +1,31 @@
+{
+  "chartgraphic": {
+    "fill": "#3498db",
+    "stroke": "#e74c3c"
+  },
+  "donutgraphic": {
+    "fill": "#f5f5f5",
+    "fill2": "#ffffff",
+    "fill3": "#3498db",
+    "fill4": "#e74c3c",
+    "fill5": "#2ecc71",
+    "fill6": "#f39c12",
+    "stroke": "#dddddd"
+  },
+  "filmgraphic": {
+    "fill": "#000",
+    "fill2": "#fff"
+  },
+  "piegraphic": {
+    "fill": "#f1f1f1",
+    "fill2": "#3498db",
+    "fill3": "#e74c3c",
+    "fill4": "#2ecc71",
+    "fill5": "#f39c12",
+    "stroke": "#ddd"
+  },
+  "wavegraphic": {
+    "stroke": "#3498db",
+    "stroke2": "#e74c3c"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+
+doc/docs/components
+doc/docs/index.md
+
+react/src/index.js
+react/src/icons
+react/src/graphics

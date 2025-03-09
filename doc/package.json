@@ -1,0 +1,23 @@
+{
+  "name": "iconifly-docs",
+  "version": "1.0.0",
+  "description": "Iconifly SVG组件库文档网站",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "node scripts/generate-docs.mjs && vitepress dev docs",
+    "docs:build": "node scripts/generate-docs.mjs && vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "documentation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "terser": "^5.39.0",
+    "vitepress": "^1.6.3",
+    "vue": "^3.3.0"
+  }
+}

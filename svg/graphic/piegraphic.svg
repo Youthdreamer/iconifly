@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- 饼图背景圆 -->
+  <circle cx="100" cy="100" r="80" fill="#f1f1f1" />
+  
+  <!-- 饼图扇区 -->
+  <path d="M100 100 L100 20 A80 80 0 0 1 171 129 Z" fill="#3498db" />
+  <path d="M100 100 L171 129 A80 80 0 0 1 100 180 Z" fill="#e74c3c" />
+  <path d="M100 100 L100 180 A80 80 0 0 1 29 129 Z" fill="#2ecc71" />
+  <path d="M100 100 L29 129 A80 80 0 0 1 100 20 Z" fill="#f39c12" />
+  
+  <!-- 中心圆 -->
+  <circle cx="100" cy="100" r="30" fill="white" stroke="#ddd" stroke-width="1" />
+</svg> 
