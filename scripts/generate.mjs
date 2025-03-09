@@ -139,7 +139,7 @@ export const ${componentName} = (props) => (
       return `
 import React from 'react';
 export const ${componentName} = (props) => (
-  <svg ${attrs} {...props}>
+  <svg ${attrs} {...props} viewBox="0 0 24 24">
     ${innerContent}
   </svg>
 );`;
