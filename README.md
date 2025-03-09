@@ -130,7 +130,7 @@ function App() {
       <Homeicon />
 
       {/* Custom size */}
-      <Homeicon width={32} height={32} />
+      <Homeicon width={32} height={32} fill="red"/>
 
       {/* Preserve aspect ratio */}
       <Filmgraphic
