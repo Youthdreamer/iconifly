@@ -36,7 +36,7 @@ function App() {
   return (
     <div>
       {/* 基本使用 */}
-      <Homeicon />
+      <Homeicon fill="red" />
 
       {/* 自定义大小 */}
       <Homeicon width={32} height={32} />
@@ -130,7 +130,7 @@ function App() {
       <Homeicon />
 
       {/* Custom size */}
-      <Homeicon width={32} height={32} />
+      <Homeicon width={32} height={32} fill="red"/>
 
       {/* Preserve aspect ratio */}
       <Filmgraphic
