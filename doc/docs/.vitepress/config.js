@@ -7,7 +7,7 @@ export default defineConfig({
   title: 'Iconifly',
   description: '轻量级SVG图标和图形库',
   head: [
-    ['link', { rel: 'icon', href: '../public/favicon.ico' }], // 占位而已，需要设计
+    ['link', { rel: 'icon', href: './public/favicon.ico' }], // 占位而已，需要设计
     [
       'meta',
       {
@@ -26,11 +26,11 @@ export default defineConfig({
 
   // 主题级配置
   themeConfig: {
-    logo: {
-      light: '../public/logo-dark.svg', // 路径以项目根目录为基准
-      dark: '../public/logo-dark.svg', // 可选
-      alt: 'Logo', // 图片alt描述
-    },
+    // logo: {
+    //   light: './public/logo-dark.svg', // 路径以项目根目录为基准
+    //   dark: './public/logo-dark.svg', // 可选
+    //   alt: 'Logo', // 图片alt描述
+    // },
     // 侧边栏配置 - 只保留组件相关页面
     sidebar: {
       '/': [
