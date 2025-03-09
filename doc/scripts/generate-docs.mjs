@@ -183,7 +183,7 @@ Iconifly是一个轻量级SVG组件库，提供了${iconsCount}个图标和${gra
 
 ##### 悄悄告诉你
 
-这网站内容太无聊了，不如来玩会<a href="https://youthdreamer.github.io/webgame/" class="tetris-button">俄罗斯方块</a>吧
+这网站内容太无聊了，不如来玩会<a href="https://youthdreamer.github.io/webgame/" target="_blank" class="tetris-button">俄罗斯方块</a>吧
 
 <style>
 .component-grid {
