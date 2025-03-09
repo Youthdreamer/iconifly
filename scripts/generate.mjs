@@ -138,8 +138,15 @@ export const ${componentName} = (props) => (
 
       return `
 import React from 'react';
-export const ${componentName} = (props) => (
-  <svg ${attrs} {...props} viewBox="0 0 24 24">
+export const ${componentName} = ({width = 24,height = 24,...props}) => (
+  <svg ${attrs} 
+  {...props}       
+  viewBox="0 0 24 24"
+  style={{
+        width: typeof width === 'number' ? \`\${width}px\` : width,
+        height: typeof height === 'number' ? \`\${height}px\` : height,
+        ...props.style,
+      }} >
     ${innerContent}
   </svg>
 );`;

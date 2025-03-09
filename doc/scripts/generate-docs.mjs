@@ -91,9 +91,9 @@ async function generateCategoryPage(category, components, outputDir) {
   if (category === 'icons') {
     content += `### React\n\n`;
     content += `\`\`\`jsx\n`;
-    content += `import { Sunicon } from '@iconifly/react';\n\n`;
+    content += `import { Homeicon } from '@iconifly/react';\n\n`;
     content += `function App() {\n`;
-    content += `  return <Sunicon width={24} height={24} />;\n`;
+    content += `  return <Homeicon width={24} height={24} fill="red" />;\n`;
     content += `}\n`;
     content += `\`\`\`\n\n`;
   } else {
@@ -101,7 +101,7 @@ async function generateCategoryPage(category, components, outputDir) {
     content += `\`\`\`jsx\n`;
     content += `import { Filmgraphic } from '@iconifly/react';\n\n`;
     content += `function App() {\n`;
-    content += `  return <Filmgraphic width={100} height={60} />;\n`;
+    content += `  return <Filmgraphic width={100} height={60}  colors={{fill: '#333',fill2: '#e0e0e0',}} />;\n`;
     content += `}\n`;
     content += `\`\`\`\n\n`;
   }
@@ -167,19 +167,23 @@ hero:
       text: 图形组件(${graphicsCount})
       link: /components/graphics
 features:
-  - title: 轻量级
-    details: 每个组件都经过优化，确保最小的文件大小
-  - title: 易于使用(文档在异次元)
-    details: 支持React，使用方式简单直接
-  - title: 可定制(激情调教，欲火焚身)
-    details: 支持颜色、大小和其他属性的自定义
-  - title: 现代化/画(现代人画的)
-    details: 会使用圆角(≧▽≦)
+  - title: 疯狂的
+    details: 我自己都不敢用
+  - title: 易于使用
+    details: 但是我不确定，可能是迷惑的 
+  - title: 可定制
+    details: 支持颜色、大小和其他属性的自定义(激情调教，欲火焚身)
+  - title: 现代化
+    details: 会使用圆角(≧▽≦现代人画的)
 ---
 
 # Iconifly SVG组件库
 
 Iconifly是一个轻量级SVG组件库，提供了${iconsCount}个图标和${graphicsCount}个图形组件，支持React。(正在以蜗牛速度更新，bug们可能会在仓库里开party，我通常很少打扰它们，我果然一直是个好人。)
+
+##### 悄悄告诉你
+
+这网站内容太无聊了，不如来玩会<a href="https://youthdreamer.github.io/webgame/" class="tetris-button">俄罗斯方块</a>吧
 
 <style>
 .component-grid {
@@ -247,11 +251,11 @@ async function generateConfig() {
   margin-top: 60px 
 }
 
-/* 隐藏外观切换按钮旁边的VitePress文本 */
-.VPNavBarAppearance .text,
-.VPNavBarAppearance .VPSwitchAppearance .text {
-  display: none !important;
+/* 针对主页标题的特殊间距调整 */
+.vp-doc h1:nth-of-type(2) {
+  margin-top: 60px 
 }
+
 
 /* 为外观切换按钮添加中文文本 */
 .VPNavBarAppearance::after {
@@ -268,12 +272,6 @@ async function generateConfig() {
 .VPNavScreenAppearance::before {
   content: '外观';
   margin-right: 8px;
-}
-
-/* 隐藏底部由VitePress提供支持的文本 */
-.VPDocFooter .text + a[href^="https://vitepress.dev"],
-.VPDocFooter > div > span:has(a[href^="https://vitepress.dev"]) {
-  display: none !important;
 }
 
 .VPSidebarItem .VPLink.active .link-text {
@@ -360,6 +358,125 @@ async function generateConfig() {
 .dark .VPSidebarItem.is-active > .item > .VPLink {
   background-color: var(--vp-c-brand-dark);
 }
+  .tetris-button {
+  display: inline-block;
+  background: linear-gradient(145deg, #4c4cff, #00d1ff);
+  border: 3px solid #00aaff;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 4px rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tetris-button:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6), inset -2px -2px 8px rgba(255, 255, 255, 0.4);
+}
+
+.tetris-button:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tetris-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #1a1a2e, #0f3460, #16213e);
+  color: #00d4ff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  border: 2px solid #00d4ff;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  box-shadow: 0 10px 20px rgba(0, 212, 255, 0.2),
+    inset 0 2px 8px rgba(0, 212, 255, 0.3);
+}
+
+.tetris-button::before {
+  content: '';
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 400%;
+  height: 400%;
+  background: conic-gradient(
+    from 0deg,
+    #00d4ff,
+    rgba(0, 255, 204, 0.5),
+    #0ff,
+    rgba(0, 255, 204, 0.5),
+    #00d4ff
+  );
+  border-radius: 50%;
+  animation: tetris-glow 4s linear infinite;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.tetris-button:hover::before {
+  opacity: 0.6;
+  animation: tetris-glow 2s linear infinite;
+}
+
+.tetris-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.4),
+    inset 0 4px 12px rgba(0, 212, 255, 0.3);
+}
+
+.tetris-button span {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 8px #00d4ff, 0 0 16px rgba(0, 212, 255, 0.7);
+}
+
+.tetris-button:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes tetris-glow {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes text-flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  24%,
+  55% {
+    opacity: 0;
+  }
+}
+
+
 `;
 
   await fs.mkdir(path.join(__dirname, '../docs/.vitepress/theme'), {
