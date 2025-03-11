@@ -1,8 +1,9 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import dts from 'rollup-plugin-dts';
 
 export default [
   {
@@ -75,4 +76,13 @@ export default [
     ],
     external: ['react', 'react-dom'],
   },
+  {
+    input: 'dist/types/index.d.ts', // TypeScript 编译生成的类型声明文件
+    output: {
+      file: 'dist/index.d.ts',
+      format: 'es', // 类型声明使用 ES 模块格式
+    },
+    plugins: [dts()],
+  },
 ];
+//TODO npm install --save-dev rollup-plugin-dts 未安装
