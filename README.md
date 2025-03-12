@@ -73,7 +73,7 @@ function App() {
 1. 将 SVG 文件放入 `svg/icon` 或 `svg/graphic` 目录
 2. 运行 `npm run optimize` 优化 SVG 文件并生成颜色映射
 3. 运行 `npm run generate` 生成组件
-4. 运行 `npm run build:all` 构建组件库
+4. 运行 `npm run build` 构建组件库
 
 ### 开发
 
@@ -130,7 +130,7 @@ function App() {
       <Homeicon />
 
       {/* Custom size */}
-      <Homeicon width={32} height={32} fill="red"/>
+      <Homeicon width={32} height={32} fill="red" />
 
       {/* Preserve aspect ratio */}
       <Filmgraphic
