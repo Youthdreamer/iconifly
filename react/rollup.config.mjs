@@ -85,4 +85,3 @@ export default [
     plugins: [dts()],
   },
 ];
-//TODO npm install --save-dev rollup-plugin-dts 未安装
